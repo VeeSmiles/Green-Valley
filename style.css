@@ -1,69 +1,44 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .slider-container {
-    width: 100%;
+}
+
+form {
+    width: 300px;
     margin: 0 auto;
-    overflow: hidden;
-    /*border: 1px solid #ccc;*/
-    border-radius: 8px; 
-   
-  }
-  
-  .slider {
-    display: flex;
-    transition: transform 0.5s ease; 
-    background-size: cover;
-  }
-  
-  .slide {
-    flex: 0 0 100%;
-  }
-  
-  .card {
-    position: relative;
-  }
-  
-  img {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
     width: 100%;
-    height: auto;
-    margin:0;
-    padding: 0;
-  }
-  nav {
-    background-color: green;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
 }
 
-nav ul li {
-    display: inline-block;
-}
-
-nav ul li a {
-    display: block;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: #fff;
-}
-
-nav ul li a:hover {
-    background-color: #555;
-}
-nav ul li::after{
-  content: '';
-  height: 3px;
-  width: 100%;
-  background: #009688;
-  position: absolute;
-  left: 0;
-  bottom: -10;
-  transition: 0.5s;
+button:hover {
+    background-color: #45a049;
 }
