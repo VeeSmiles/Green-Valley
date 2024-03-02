@@ -1,49 +1,101 @@
 body {
     font-family: Arial, sans-serif;
-}
-
-form {
-    width: 300px;
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #486F38;
+    color: #fff;
     padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-}
+  }
 
-h2 {
-    text-align: center;
-}
-
-img {
+  img {
     max-width: 100%; /* limit the maximum width of the image to 100% of its parent element */
     height: auto; /* adjust the height of the image proportionally to its width */
   }
+
+
   
-p {
-    text-align: center;
-}
-
-input[type="text"],
-input[type="password"],
-input[type="email"] {
-    width: 100%;
+  header h1 {
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+  
+  section h2 {
+    color: #333;
+  }
+  
+  .article {
+    background-color: #f9f9f9;
+    padding: 10px;
     margin-bottom: 10px;
+  }
+  
+  .article h3 {
+    margin: 0;
+  }
+  
+  .article p {
+    color: #666;
+  }
+  .article img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  .article a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  footer {
+    background-color: #486F38;
+    color: #fff;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
+    text-align: center;
+  }
 
-button {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #4CAF50;
-    color: white;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #45a049;
-}
+  footer {
+    background-color: #486F38; /* use the same green color as the header */
+    color: #fff; /* use white color for the text */
+    padding: 20px; /* add some space inside the footer */
+    margin-top: 20px; /* add some space above the footer */
+    text-align: center; /* center the text horizontally */
+  }
+  
+  footer p {
+    margin: 0; /* remove the default margin from the paragraphs */
+  }
+  
+  footer a {
+    color: #fff; /* use the same color as the paragraphs */
+    text-decoration: none; /* remove the underline from the links */
+  }
