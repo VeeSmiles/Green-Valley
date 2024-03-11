@@ -4,98 +4,111 @@ body {
     padding: 0;
   }
   
-  header {
-    background-color: #486F38;
-    color: #fff;
-    padding: 20px;
+  .slider-container {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+   
   }
-
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease; 
+    background-size: cover;
+  }
+  
+  .slide {
+    flex: 0 0 100%;
+  }
+  
+  .card {
+    position: relative;
+  }
+  
   img {
-    max-width: 100%; /* limit the maximum width of the image to 100% of its parent element */
-    height: auto; /* adjust the height of the image proportionally to its width */
+    width: 100%;
+    height: auto;
+    margin:0;
+    padding: 0;
   }
+  nav {
+    background-color: green;
+    width: 100%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
 
-
-  
-  header h1 {
-    margin: 0;
-  }
-  
-  nav ul {
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 10px;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  main {
-    padding: 20px;
-  }
-  
-  section {
-    margin-bottom: 20px;
-  }
-  
-  section h2 {
-    color: #333;
-  }
-  
-  .article {
-    background-color: #f9f9f9;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .article h3 {
-    margin: 0;
-  }
-  
-  .article p {
-    color: #666;
-  }
-  .article img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 500px;
-    height: auto;
-    object-fit: cover;
-    margin-bottom: 10px;
-  }
-  .article a {
-    color: #333;
-    text-decoration: none;
-  }
-  
-  footer {
-    background-color: #486F38;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-  }
+}
 
-  footer {
-    background-color: #486F38; /* use the same green color as the header */
-    color: #fff; /* use white color for the text */
-    padding: 20px; /* add some space inside the footer */
-    margin-top: 20px; /* add some space above the footer */
-    text-align: center; /* center the text horizontally */
-  }
-  
-  footer p {
-    margin: 0; /* remove the default margin from the paragraphs */
-  }
-  
-  footer a {
-    color: #fff; /* use the same color as the paragraphs */
-    text-decoration: none; /* remove the underline from the links */
-  }
+nav ul li {
+      display: inline-block;
+      list-style: none;
+      margin: 0 20px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+.left{
+    width: 50vw;
+    height: 40vh;
+    padding: 20px;
+    float: left;
+    background-color: #fff;
+}
+
+.right{
+  width:40vw;
+  height: 40vh;
+  float: right;
+  background-color: #fff;
+}
+
+.Rhinoleft{
+  width: 40vw;
+  height: 40vh;
+  float: left;
+  background-color: #fff;
+}
+
+.Rhinoright{
+  width:50vw;
+  height: 40vh; 
+  padding: 20px;
+  float: right;
+  background-color: #fff;
+}
+/*
+.Rhino{
+  width: 1280px;
+  height: 800px;
+  padding: 20px;
+  background-color: aquamarine;
+  clear: both;
+}
+*/
+.footer{
+  background-color: green;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+}
