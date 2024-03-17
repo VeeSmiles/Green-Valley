@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wildlife Club Registration</title>
+    <link rel="icon" href="GV-WHITE.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+      .container {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      .form-group label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      .form-group input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .form-group button {
+        width: 100%;
+        padding: 10px;
+        background-color: #4CAF50;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Registration Form</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+        </div>
+        <div class="form-group">
+          <label for="interests">Interests</label>
+          <input type="text" id="interests" name="interests">
+        </div>
+        <div class="form-group">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  <footer>
+    <p>Follow us on: <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="https://www.instagram.com/green.valley101?igsh=MXRramkwZHkxeXNwZQ==">Instagram</a></p>
+    <p>Email: info@greenvalley.org | Phone: +25479511040</p>
+    <marquee>
+      <p>© 2024 Green Valley Africa. All rights reserved.</p>
+    </marquee>
+</footer>
+
+  <script>// JavaScript code to handle form submission
+    
+    document.getElementById("registrationForm").addEventListener("submit", function(event) {
+      event.preventDefault(); 
+
+      // Get form values
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var interests= document.getElementById("interests").value;
+
+      
+
+      // Display reg det
+      alert("Registration Successful!\nName: " + name + "\nEmail: " + email + "\nInterests: " + interests);
+
+      // Reset form
+      document.getElementById("registrationForm").reset();
+    });
+  </script>
+</body>
+
+</html>
