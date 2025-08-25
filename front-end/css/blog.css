@@ -5,7 +5,7 @@ body {
   }
   
   header {
-    background-color: #486F38;
+    background-color: green;
     color: #fff;
     padding: 20px;
   }
@@ -13,7 +13,7 @@ body {
   header h1 {
     margin: 0;
   }
-  
+  /*
   nav ul {
     list-style-type: none;
     margin: 0;
@@ -29,7 +29,7 @@ body {
     color: #fff;
     text-decoration: none;
   }
-  
+  */
   main {
     padding: 20px;
   }
@@ -69,9 +69,13 @@ body {
     text-decoration: none;
   }
   
-  footer {
-    background-color: #486F38;
-    color: #fff;
+  footer{
     padding: 10px;
+    font: 17px;
+    font-weight: bold;
     text-align: center;
-  }
+    background: green;
+    color: white;
+    font-family: Arial;
+    letter-spacing: 1px;
+}
